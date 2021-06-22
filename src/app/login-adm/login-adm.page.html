@@ -1,0 +1,33 @@
+<ion-header color="temaadm">
+  <ion-toolbar>
+    <ion-title mode="md">Administrador</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button id="btnVoltar" mode="md" color="light" fill="outline" (click)="navVoltar()" class="shadow">voltar
+    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon></ion-button>
+
+  <img id="logo" src="../../assets/imgs/rhweb-logo.png">
+
+  <ion-label id="label">Bem Vindo!</ion-label>
+
+  <ion-item class="inpEmail">
+    <ion-label position="floating" color="light"><ion-icon slot="start" name="person"></ion-icon> Insira o e-mail</ion-label>
+    <ion-input  color="light" type="email"></ion-input>
+  </ion-item>
+  <ion-item class="inpEmail">
+    <ion-label position="floating" color="light"><ion-icon  slot="start" name="lock-closed">
+
+    </ion-icon> Senha</ion-label>
+    <ion-input  color="light" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" id="btnLogin" mode="md" color="light" class="shadow">Entrar
+  </ion-button>
+
+  <a class="recuperar">Recuperar Senha</a>
+
+  <hr id="separador1">
+  <hr id="separador2">
+</ion-content>

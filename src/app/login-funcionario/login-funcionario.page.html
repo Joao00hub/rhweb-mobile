@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="temaadm" mode="md">Funcionário</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button id="btnVoltar" mode="md" color="temaadm" fill="outline" class="shadow" (click)="navVoltar()">voltar
+    <ion-icon name="arrow-forward-outline" slot="end"></ion-icon></ion-button>
+
+  <img id="logo" src="../../assets/imgs/rhweb-logo-fun.png">
+
+  <ion-label id="label">Bem Vindo!</ion-label>
+
+  <ion-item class="inpEmail">
+    <ion-label position="floating" color="temaadm"><ion-icon slot="start" name="person"></ion-icon> Insira o e-mail</ion-label>
+    <ion-input  color="temaadm" type="email"></ion-input>
+  </ion-item>
+  <ion-item class="inpEmail">
+    <ion-label position="floating" color="temaadm"><ion-icon  slot="start" name="lock-closed">
+
+    </ion-icon> Senha</ion-label>
+    <ion-input  color="temaadm" type="password"></ion-input>
+  </ion-item>
+
+  <ion-button expand="block" id="btnLogin" mode="md" color="temaadm" class="shadow">Entrar
+  </ion-button>
+
+  <a class="recuperar">Recuperar Senha</a>
+
+  <hr id="separador1">
+  <hr id="separador2">
+</ion-content>

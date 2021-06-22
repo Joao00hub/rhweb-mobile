@@ -1,0 +1,73 @@
+
+
+#btnVoltar{
+    font-size: 10px;
+    position: relative;
+    left: 61%;
+    top: 4%;
+}
+
+#logo{
+    height: 29%;
+    position: relative;
+    top: 4%;
+    left: 6%;
+}
+
+.inpEmail{
+    width: 80%;
+    position: relative;
+    left: 8%;
+}
+
+ion-item { 
+    --border-color: #0F4561;
+}
+
+#label{
+    left: 35%;
+    position: relative;
+    color: #0F4561;
+    font-size: 17px;
+    color: #0F4561;
+    text-shadow: 1px 1px 4px rgb(149 150 150);
+    font-family: -webkit-pictograph;
+}
+
+#btnLogin{
+    position: relative;
+    top: 6%;
+    width: 65%;
+    left: 18%;
+    height: 9%;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.recuperar{
+    top: 7%;
+    position: relative;
+    left: 34%;
+    font-size: 12px;
+    text-shadow: 1px 1px 4px rgb(149 150 150);
+    color: #0F4561;
+    text-decoration:none; 
+}
+
+#separador1{
+    position: relative;
+    top: 6%;
+    width: 38%;
+    color: #0F4561;
+    height: 1px;
+    left: 10%;
+}
+
+#separador2{
+    position: relative;
+    top: 14px;
+    width: 38%;
+    color: #0F4561;
+    height: 1px;
+    left: 55%;
+}

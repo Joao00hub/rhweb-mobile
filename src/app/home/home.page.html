@@ -1,20 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-button expand="block" id="btnAdm" mode="md" color="temaadm" (click)="navLoginAdm()"
+  >Administrador</ion-button>
+  <ion-button expand="block" id="btnFun" mode="md" color="light" class="teste" (click)="navLoginFun()">
+    Funcionário</ion-button>
+  <img src="../../assets/imgs/rhimagem.png" class="imgrh animate__animated animate__fadeInRight">
 </ion-content>

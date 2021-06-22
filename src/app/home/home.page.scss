@@ -1,6 +1,6 @@
 #container {
   text-align: center;
-
+  
   position: absolute;
   left: 0;
   right: 0;
@@ -24,4 +24,33 @@
 
 #container a {
   text-decoration: none;
+}
+
+ion-content{
+--background: #fff url('../../assets/imgs/fundo.png') no-repeat center center / cover;
+}
+
+#btnAdm{
+  margin-top: 71%;
+    position: relative;
+    height: 46px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+#btnFun{
+    height: 46px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+}
+
+.teste{
+  --color: #003D5A;
+  color: #003D5A;
+}
+
+.imgrh{
+  height: 216px;
+    position: relative;
+    left: 41%;
 }
