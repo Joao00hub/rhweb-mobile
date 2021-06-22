@@ -13,6 +13,10 @@ export class LoginAdmPage implements OnInit {
     this.navCtrl.navigateForward('home');
   }
 
+  navLogar(){
+    this.navCtrl.navigateForward('inicio-adm');
+  }
+
   ngOnInit() {
   }
 
