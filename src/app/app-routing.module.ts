@@ -23,6 +23,14 @@ const routes: Routes = [
     path: 'inicio-adm',
     loadChildren: () => import('./inicio-adm/inicio-adm.module').then( m => m.InicioAdmPageModule)
   },
+  {
+    path: 'quem-somos',
+    loadChildren: () => import('./quem-somos/quem-somos.module').then( m => m.QuemSomosPageModule)
+  },
+  {
+    path: 'avisos',
+    loadChildren: () => import('./avisos/avisos.module').then( m => m.AvisosPageModule)
+  },
 ];
 
 @NgModule({

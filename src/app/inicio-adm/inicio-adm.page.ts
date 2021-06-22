@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-inicio-adm',
@@ -7,8 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioAdmPage implements OnInit {
 
-  constructor() { }
-
+  constructor(private navCtrl : NavController) { }
+  navQuemSomos(){
+    this.navCtrl.navigateForward('quem-somos');
+  }
+  navAvisos(){
+    this.navCtrl.navigateForward('avisos');
+  }
+  
   ngOnInit() {
   }
 

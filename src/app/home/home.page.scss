@@ -36,12 +36,22 @@ ion-content{
     height: 46px;
     text-transform: capitalize;
     font-family: sans-serif;
+    width: 76%;
+    position: relative;
+    left: 11%;
+    --border-radius: 8px;
+    top: 1%;
 }
 
 #btnFun{
     height: 46px;
     text-transform: capitalize;
     font-family: sans-serif;
+    width: 76%;
+    position: relative;
+    left: 11%;
+    --border-radius: 8px;
+    top: 2%;
 }
 
 .teste{
