@@ -15,6 +15,9 @@ export class InicioAdmPage implements OnInit {
   navAvisos(){
     this.navCtrl.navigateForward('avisos');
   }
+  navNoticias(){
+    this.navCtrl.navigateForward('noticias');
+  }
   
   ngOnInit() {
   }

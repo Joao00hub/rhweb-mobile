@@ -1,0 +1,214 @@
+<ion-header>
+  <ion-toolbar color="temaadm">
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title mode="ios">Editar Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="funcImageSec">
+    <img id="funcFoto" />
+  </div>
+
+  <ion-badge class="situacao" color="success">Ativo</ion-badge>
+  <ion-label id="alterarSituacao" color="temaadm">Alterar Situação</ion-label>
+
+  <img class="sessaoPessoais" src="../../assets/imgs/dadospessoais.png">
+
+  <div id="dadosPessoais">
+    <ion-item>
+      <ion-label class="my-label" position="floating">NOME</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">IDADE</ion-label>
+          <ion-input> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">SEXO</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>NASCIMENTO</ion-label>
+          <ion-input> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>ESTADO CIVIL</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">ENFERMO</ion-label>
+          <ion-input> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">DEFICIENTE</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">IDADE</ion-label>
+          <ion-input> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">SEXO</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>ENFERMIDADE</ion-label>
+          <ion-input readonly> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>TIPO-DEFICIENCIA</ion-label>
+          <ion-input readonly></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CEP</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">RUA</ion-label>
+      <ion-input readonly></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>BAIRRO</ion-label>
+          <ion-input readonly> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>CIDADE</ion-label>
+          <ion-input readonly></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-radio-group value="biff">
+    <ion-label class="my-label graduado" position="floating">GRADUADO</ion-label>
+    <ion-row>     
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label">SIM</ion-label>
+          <ion-radio slot="start" value="friends" mode="md"></ion-radio>
+        </ion-item>
+      </ion-col>
+      
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label">NÃO</ion-label>
+          <ion-radio slot="start" value="grad" mode="md"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-radio-group>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">EMAIL</ion-label>
+      <ion-input type="email"></ion-input>
+    </ion-item>
+
+    
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>CELULAR</ion-label>
+          <ion-input type="tel"> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>FIXO</ion-label>
+          <ion-input type="tel"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>FAMILIAR</ion-label>
+          <ion-input type="tel"> </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating" text-wrap>PARENTESCO</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">NOME DO FAMILIAR</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CPF FUNCIONARIO</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+
+  <div id="dadosAdministrativos">
+    <img class="sessaoPessoais" src="../../assets/imgs/img-administrativos.png">
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CARGO</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">PRÓXIMAS FÉRIAS</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">SALARIO CONTRATUAL</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <ion-button id="btnFun" mode="md" color="success" class="btnSalvar">
+      SALVAR <ion-icon slot="end" name="save-outline"></ion-icon></ion-button>
+
+  </div>
+</ion-content>

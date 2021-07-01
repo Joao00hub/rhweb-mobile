@@ -1,0 +1,67 @@
+#btn-upload{
+    position: relative;
+    top: -21%;
+    left: 29%;
+    border-radius: 30px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    -webkit-box-shadow: 1px 2px 5px 0px rgb(50 50 50 / 70%);
+    width: 43%;
+    font-size: 12px;
+    z-index: 1001;
+}
+
+#funcImageSec{
+    height: 180px;
+    width: 180px;
+    background-color: #C4C4C4;
+    top: 4%;
+    position: relative;
+    border-radius: 10px;
+    left: 19%;
+    -webkit-box-shadow: 0px 2px 5px 0px rgb(50 50 50 / 70%);
+}
+
+.sessaoPessoais{
+    position: relative;
+    width: 78%;
+    top: 11%;
+    left: 14%;
+}
+
+#dadosPessoais{
+    position: relative;
+    top: 13%;
+}
+
+#funcFoto{
+    height: 180px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+.my-label {
+    font-size: 10px;
+  }
+
+.graduado{
+    position: relative;
+    left: 5%;
+}
+
+#dadosAdministrativos{
+    position: relative;
+    top: 20%;
+}
+
+.btnSalvar{
+    position: relative;
+    left: 25%;
+    margin-top: 10%;
+    width: 60%;
+}
+
+ion-radio{
+    z-index: 10002;
+}

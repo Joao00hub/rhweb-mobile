@@ -31,6 +31,22 @@ const routes: Routes = [
     path: 'avisos',
     loadChildren: () => import('./avisos/avisos.module').then( m => m.AvisosPageModule)
   },
+  {
+    path: 'noticias',
+    loadChildren: () => import('./noticias/noticias.module').then( m => m.NoticiasPageModule)
+  },
+  {
+    path: 'funcionarios',
+    loadChildren: () => import('./funcionarios/funcionarios.module').then( m => m.FuncionariosPageModule)
+  },
+  {
+    path: 'novocadastro',
+    loadChildren: () => import('./novocadastro/novocadastro.module').then( m => m.NovocadastroPageModule)
+  },
+  {
+    path: 'editarcadastro',
+    loadChildren: () => import('./editarcadastro/editarcadastro.module').then( m => m.EditarcadastroPageModule)
+  },
 ];
 
 @NgModule({

@@ -18,7 +18,7 @@
     left: 6%;
     font-size: 13px;
     top: -2%;
-    box-shadow: 2px 5px 15px #5c5c5c, -261px -7px 14px #ffffff;
+    box-shadow: 0px 0px 14px #5c5c5c, -261px -7px 14px #ffffff;
     border-radius: 12px;
 }
 
@@ -29,7 +29,7 @@
     left: 5%;
     border-radius: 3px;
     height: 14%;
-    box-shadow: inset 1px 3px 10px #cacaca, inset -16px -5px 10px #f6f6f6
+    box-shadow: inset 1px 3px 3px #cacaca, inset -16px -5px 10px #f6f6f6
 }
 
 #aviso2{
@@ -39,7 +39,7 @@
     left: 5%;
     border-radius: 3px;
     height: 14%;
-    box-shadow: inset 1px 3px 10px #cacaca, inset -16px -5px 10px #f6f6f6
+    box-shadow: inset 1px 3px 3px #cacaca, inset -16px -5px 10px #f6f6f6
 }
 
 #aviso3{
@@ -49,5 +49,67 @@
     left: 5%;
     border-radius: 3px;
     height: 14%;
-    box-shadow: inset 1px 3px 10px #cacaca, inset -16px -5px 10px #f6f6f6
+    box-shadow: inset 1px 3px 3px #cacaca, inset -16px -5px 10px #f6f6f6
+}
+
+#aviso4{
+    position: relative;
+    top: 20%;
+    width: 90%;
+    left: 5%;
+    border-radius: 3px;
+    height: 14%;
+    box-shadow: inset 1px 3px 3px #cacaca, inset -16px -5px 10px #f6f6f6
+}
+
+#aviso5{
+    position: relative;
+    top: 24%;
+    width: 90%;
+    left: 5%;
+    border-radius: 3px;
+    height: 14%;
+    box-shadow: inset 1px 3px 3px #cacaca, inset -16px -5px 10px #f6f6f6
+}
+
+#imgAviso1{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
+}
+
+#imgAviso2{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
+}
+
+#imgAviso3{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
+}
+
+#imgAviso4{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
+}
+
+#imgAviso5{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
+}
+
+#imgAviso1{
+    position: relative;
+    top: 10%;
+    height: 93%;
+    width: 97%;
 }

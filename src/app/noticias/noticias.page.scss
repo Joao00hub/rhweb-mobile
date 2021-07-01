@@ -1,0 +1,41 @@
+#noticias{
+    position: relative;
+    top: 1%;
+    left: 2%;
+    width: 95%;
+    height: 52px;
+    text-transform: capitalize;
+    font-family: inherit;
+    --border-radius: 10px;
+    z-index: 100;
+}
+
+#not{
+    width: 90%;
+    height: 80%;
+    position: relative;
+    left: 6%;
+    top: -2%;
+    box-shadow: 2px 5px 15px #5c5c5c, -261px -7px 14px #ffffff;
+    border-radius: 12px;
+}
+
+#not1{
+ 
+}
+
+#imgNot1{
+    max-width: none;
+    position: relative;
+    right: 21%;
+    width: 142%;
+    top: 25px;
+}
+
+#imgNot2{
+    max-width: none;
+    position: relative;
+    right: 21%;
+    width: 142%;
+    top: -65px;
+}
