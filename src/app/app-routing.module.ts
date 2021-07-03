@@ -46,7 +46,11 @@ const routes: Routes = [
   {
     path: 'editarcadastro',
     loadChildren: () => import('./editarcadastro/editarcadastro.module').then( m => m.EditarcadastroPageModule)
+  },  {
+    path: 'funcionarios-desligados',
+    loadChildren: () => import('./funcionarios-desligados/funcionarios-desligados.module').then( m => m.FuncionariosDesligadosPageModule)
   },
+
 ];
 
 @NgModule({
