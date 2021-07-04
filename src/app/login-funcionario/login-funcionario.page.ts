@@ -13,6 +13,10 @@ export class LoginFuncionarioPage implements OnInit {
     this.navCtrl.navigateForward('home');
   }
 
+  navLogar(){
+    this.navCtrl.navigateForward('inicio-funcionario');
+  }
+
   ngOnInit() {
   }
 

@@ -8,9 +8,8 @@ import { PopoverController } from '@ionic/angular';
 })
 export class EditarcadastroPage implements OnInit {
 
-  constructor(public popoverController: PopoverController) { }
+  constructor(public popoverCtlr: PopoverController) { }
 
   ngOnInit() {
   }
-
 }
