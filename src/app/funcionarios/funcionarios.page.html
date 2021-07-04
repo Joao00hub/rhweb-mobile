@@ -12,7 +12,7 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content style="height: 100%;">
   <ion-tabs>
     <ion-tab-bar id="tab" slot="top" class="shadow-lg">
       <ion-tab-button tab="data">
@@ -36,45 +36,12 @@
   </ion-searchbar>
 
   <ion-list id="list">
-    <ion-item (click)="navEditCadastro()">
+    <ion-item *ngFor="let funcionario of funcs" (click)="navEditCadastro()">
       <img class="funImg" src="../../assets/imgs/teste1.png">
       <ion-label id="teste">
-        <h3 class="funNome">Yudi Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funAtivo">Ativo</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2019-PRESENTE</ion-note>
-      </ion-item-divider>
-    </ion-item>
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste2.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Yudi Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funAtivo">Ativo</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2019-PRESENTE</ion-note>
-      </ion-item-divider>
-    </ion-item>
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste1.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Yudi Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funAtivo">Ativo</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2019-PRESENTE</ion-note>
-      </ion-item-divider>
-    </ion-item>
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste1.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Yudi Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funAtivo">Ativo</h4>
+        <h3 class="funNome">{{ funcionario.nome }}</h3>
+        <h3 class="funCargo">{{ funcionario.cargo}}</h3>
+        <h4 class="{{classSitua}}">{{ funcionario.situacao.descricao }}</h4>
       </ion-label>
       <ion-item-divider>
         <ion-note class="note" slot="end" mode="ios">2019-PRESENTE</ion-note>
