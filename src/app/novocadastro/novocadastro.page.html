@@ -20,110 +20,148 @@
   <div id="dadosPessoais">
     <ion-item>
       <ion-label class="my-label" position="floating">NOME</ion-label>
-      <ion-input></ion-input>
+      <ion-input id="funcNome"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CPF</ion-label>
+      <ion-input id="funcCpf"></ion-input>
     </ion-item>
 
     <ion-row>
       <ion-col size="6">
         <ion-item>
-          <ion-label class="my-label" position="floating">IDADE</ion-label>
-          <ion-input> </ion-input>
+          <ion-label class="my-label" position="floating">DATA NASCIMENTO</ion-label>
+          <ion-input id="funcDataNasc"></ion-input>
         </ion-item>
       </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">ESTADO CIVIL</ion-label>
+          <ion-select id="slctEstado" interface="popover">
+             <ion-select-option value="Solteiro(a)">Solteiro(a)</ion-select-option>
+             <ion-select-option value="Casado(a)">Casado(a)</ion-select-option>
+             <ion-select-option value="Divorciado(a)">Divorciado(a)</ion-select-option>
+             <ion-select-option value="Viuvo(a)">Viúvo(a)</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
       <ion-col size="6">
         <ion-item>
           <ion-label class="my-label" position="floating">SEXO</ion-label>
-          <ion-input></ion-input>
+          <ion-select id="slctSexo" interface="popover">
+             <ion-select-option value="Solteiro(a)">Masculino</ion-select-option>
+             <ion-select-option value="Casado(a)">Feminino</ion-select-option>
+             <ion-select-option value="Casado(a)">Outro</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label class="my-label" position="floating">GRADUADO</ion-label>
+          <ion-select>
+             <ion-select-option value="sim">Sim</ion-select-option>
+             <ion-select-option value="nao">Não</ion-select-option>
+          </ion-select>
         </ion-item>
       </ion-col>
     </ion-row>
 
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>NASCIMENTO</ion-label>
-          <ion-input> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>ESTADO CIVIL</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
+    <ion-item>
+      <ion-label class="my-label" position="floating">GRADUAÇÃO</ion-label>
+      <ion-input id="funcGraduado"></ion-input>
+    </ion-item>
 
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating">ENFERMO</ion-label>
-          <ion-input> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating">DEFICIENTE</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating">IDADE</ion-label>
-          <ion-input> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating">SEXO</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>ENFERMIDADE</ion-label>
-          <ion-input readonly> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>TIPO-DEFICIENCIA</ion-label>
-          <ion-input readonly></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
+    <ion-item>
+      <ion-label class="my-label" position="floating">EMAIL</ion-label>
+      <ion-input id="funcEmail" type="email"></ion-input>
+    </ion-item>
 
     <ion-item>
       <ion-label class="my-label" position="floating">CEP</ion-label>
-      <ion-input></ion-input>
+      <ion-input id="funcCep"></ion-input>
     </ion-item>
-
-    <ion-item>
-      <ion-label class="my-label" position="floating">RUA</ion-label>
-      <ion-input readonly></ion-input>
-    </ion-item>
-
+   
     <ion-row>
       <ion-col size="6">
         <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>BAIRRO</ion-label>
-          <ion-input readonly> </ion-input>
+          <ion-label class="my-label" position="floating">NUMERO</ion-label>
+          <ion-input id="funcNumero" type="number"></ion-input>
         </ion-item>
       </ion-col>
       <ion-col size="6">
         <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>CIDADE</ion-label>
-          <ion-input readonly></ion-input>
+          <ion-label class="my-label" position="floating">COMPLEMENTO</ion-label>
+          <ion-input id="funcComplemento"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>
 
-    <ion-radio-group value="biff">
+    <ion-item>
+      <ion-label class="my-label" position="floating">RUA</ion-label>
+      <ion-input id="funcRua" ></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label class="my-label" position="floating">BAIRRO</ion-label>
+      <ion-input id="funcBairro" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CIDADE</ion-label>
+      <ion-input id="funcCidade" ></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CELULAR</ion-label>
+      <ion-input id="funcCelular"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">FIXO</ion-label>
+      <ion-input id="funcFixo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CONTATO DE EMERGENCIA</ion-label>
+      <ion-input id="funcEmergencia"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">NOME CONTATO</ion-label>
+      <ion-input id="funcContatoEmerg"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">GRAU DE PARENTESCO</ion-label>
+      <ion-select id="sltcParentesco" interface="popover">
+        <ion-select-option value="Mãe">Mãe</ion-select-option>
+        <ion-select-option value="Pai">Pai</ion-select-option>
+        <ion-select-option value="Irmã(o)">Irmã(o)</ion-select-option>
+        <ion-select-option value="Cônjuge">Cônjuge</ion-select-option>
+        <ion-select-option value="Filho(a)">Filho(a)</ion-select-option>
+        <ion-select-option value="Outro">Outro</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">POSSUI DEFICIENCIA?</ion-label>
+      <ion-select>
+         <ion-select-option value="sim">Sim</ion-select-option>
+         <ion-select-option value="nao">Não</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">DEFICIENCIA</ion-label>
+      <ion-input id="funcDefic"> </ion-input>
+    </ion-item>
+
+
+    <!-- <ion-radio-group value="biff">
     <ion-label class="my-label graduado" position="floating">GRADUADO</ion-label>
     <ion-row>     
       <ion-col size="6">
@@ -140,75 +178,43 @@
         </ion-item>
       </ion-col>
     </ion-row>
-  </ion-radio-group>
-
-    <ion-item>
-      <ion-label class="my-label" position="floating">EMAIL</ion-label>
-      <ion-input type="email"></ion-input>
-    </ion-item>
-
-    
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>CELULAR</ion-label>
-          <ion-input type="tel"> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>FIXO</ion-label>
-          <ion-input type="tel"></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>FAMILIAR</ion-label>
-          <ion-input type="tel"> </ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col size="6">
-        <ion-item>
-          <ion-label class="my-label" position="floating" text-wrap>PARENTESCO</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-
-    <ion-item>
-      <ion-label class="my-label" position="floating">NOME DO FAMILIAR</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label class="my-label" position="floating">CPF FUNCIONARIO</ion-label>
-      <ion-input></ion-input>
-    </ion-item>
+  </ion-radio-group> -->  
   </div>
-
+  
   <div id="dadosAdministrativos">
     <img class="sessaoPessoais" src="../../assets/imgs/img-administrativos.png">
 
     <ion-item>
+      <ion-label class="my-label" position="floating">ADMINISTRADOR</ion-label>
+      <ion-select ng-model="mySelect" ng-change="showSelectValue(mySelect)" id="funcAdm">
+         <ion-select-option value="sim">Sim</ion-select-option>
+         <ion-select-option value="nao">Não</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
       <ion-label class="my-label" position="floating">CARGO</ion-label>
-      <ion-input></ion-input>
+      <ion-input id="funcCargo"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="my-label" position="floating">CONTRATAÇÃO</ion-label>
+      <ion-input id="funcDtContrata"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="my-label" position="floating">PRÓXIMAS FÉRIAS</ion-label>
-      <ion-input></ion-input>
+      <ion-input id="funcDtFerias"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label class="my-label" position="floating">SALARIO CONTRATUAL</ion-label>
-      <ion-input></ion-input>
+      <ion-input id="funcSalario"></ion-input>
     </ion-item>
 
-    <ion-button id="btnFun" mode="md" color="success" class="btnSalvar">
-      SALVAR <ion-icon slot="end" name="save-outline"></ion-icon></ion-button>
+    <ion-button id="btnFun" mode="md" color="success" class="btnSalvar" (click)="createEmploye()">
+      SALVAR <ion-icon slot="end" name="save-outline" ></ion-icon>
+    </ion-button>
 
   </div>
 </ion-content>

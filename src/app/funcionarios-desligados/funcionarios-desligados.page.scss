@@ -8,12 +8,6 @@ ion-tab-bar{
              -5px -5px 10px #ffffff;
 }
 
-ion-item-divider{
-    border: none;
-    color: #9c0202;
-}
-
-
 .iconColor{
     color: #fff;
 }
@@ -68,4 +62,6 @@ ion-item-divider{
 
 ion-item-divider{
     --background: #fff;
+    position: relative;
+    top: 24%;
 }

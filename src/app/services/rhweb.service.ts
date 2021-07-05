@@ -2,6 +2,7 @@ import { funcionarios } from './../models/funcionarios.model';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient,  HttpHeaders } from '@angular/common/http';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 
 @Injectable({
@@ -10,11 +11,43 @@ import { HttpClient,  HttpHeaders } from '@angular/common/http';
 export class RhwebService {
 
   constructor(private http: HttpClient) { }
+  //Funcionarios
   public getFuncionarios():Observable<any>{
+    var logToken = localStorage.getItem('acessToken')
     var reqHeader = new HttpHeaders({ 
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ' + 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE0LCJyb2xlIjoiYWRtaW5pc3RyYXRvciIsImlhdCI6MTYyNTQyNjI1MSwiZXhwIjoxNjI1NDI5ODUxfQ.RbEgwOnbTSn8BTo0VPcDb7zBr3kL_Ss8wP0II8F87nY'
+      'Authorization': 'Bearer ' + logToken
    });
     return this.http.get('https://rh-web-api.herokuapp.com/funcionarios/ativos', { headers: reqHeader })
+  }
+
+  //Funcionarios Desligados
+  public getFuncionariosDesligados():Observable<any>{
+    var logToken = localStorage.getItem('acessToken')
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + logToken
+   });
+    return this.http.get('https://rh-web-api.herokuapp.com/funcionarios/desligados', { headers: reqHeader })
+  }
+
+  //Login Adm
+  public loginFunAdm(usuario: any, senha: any):Observable<any>{
+    const body = {usuario,senha}
+    console.log(body);
+    return this.http.post('https://rh-web-api.herokuapp.com/login', body)
+  }
+
+  //Novo Cadastro
+  public CadastraFuncionario(NovoFuncionario: any):Observable<any>{
+    var EnviaToken = localStorage.getItem('acessToken')
+    console.log(EnviaToken);
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + EnviaToken
+   });
+   var bodyCadastro = {NovoFuncionario};
+   console.log('chegou e veio como json: ', NovoFuncionario);
+    return this.http.post('https://rh-web-api.herokuapp.com/funcionario/novo', bodyCadastro, { headers: reqHeader })
   }
 }

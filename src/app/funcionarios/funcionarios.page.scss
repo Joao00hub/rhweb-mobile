@@ -57,7 +57,7 @@ ion-item-divider{
     width: 55px;
     border-radius: 50%;
     margin-right: 13px;
-    -webkit-box-shadow: 0px 3px 2px 0px rgb(50 50 50 / 70%);
+    box-shadow: 0px 3px 2px 0px rgb(50 50 50 / 70%);
     margin-left: 1px;
 }
 
@@ -67,6 +67,8 @@ ion-item-divider{
 
 ion-item-divider{
     --background: #fff;
+    top: 26%;
+    position: relative;
 }
 
 .item-native{

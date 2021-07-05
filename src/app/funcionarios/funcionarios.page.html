@@ -41,10 +41,10 @@
       <ion-label id="teste">
         <h3 class="funNome">{{ funcionario.nome }}</h3>
         <h3 class="funCargo">{{ funcionario.cargo}}</h3>
-        <h4 class="{{classSitua}}">{{ funcionario.situacao.descricao }}</h4>
+        <h4 class="funAtivo">{{ funcionario.situacao.descricao }}</h4>
       </ion-label>
       <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2019-PRESENTE</ion-note>
+        <ion-note class="note" slot="end" mode="ios">{{funcionario.dtAdm}}-PRESENTE</ion-note>
       </ion-item-divider>
     </ion-item>
   </ion-list>

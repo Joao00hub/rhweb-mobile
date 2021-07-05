@@ -17,53 +17,15 @@
   </ion-searchbar>
 
   <ion-list id="list">
-    <ion-item>
+    <ion-item *ngFor="let funcionario of funcsDesligados">
       <img class="funImg" src="../../assets/imgs/teste1.png">
       <ion-label id="teste">
-        <h3 class="funNome">Lucas Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funDeslig">Desligado</h4>
+        <h3 class="funNome">{{ funcionario.nome }}</h3>
+        <h3 class="funCargo">{{ funcionario.cargo }}</h3>
+        <h4 class="funDeslig">{{ funcionario.situacao.descricao }}</h4>
       </ion-label>
       <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2019-DESLIGADO</ion-note>
-      </ion-item-divider>
-    </ion-item>
-
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste2.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Vanessa Gabriel</h3>
-        <h3 class="funCargo">Administrador(a)</h3>
-        <h4 class="funDeslig">Desligado</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2016-DESLIGADO</ion-note>
-      </ion-item-divider>
-    </ion-item>
-
-
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste1.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Clarisse Gabriel</h3>
-        <h3 class="funCargo">Psicólo(a)</h3>
-        <h4 class="funDeslig">Desligado</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2020-DESLIGADO</ion-note>
-      </ion-item-divider>
-    </ion-item>
-
-
-    <ion-item>
-      <img class="funImg" src="../../assets/imgs/teste1.png">
-      <ion-label id="teste">
-        <h3 class="funNome">Yudi Gabriel</h3>
-        <h3 class="funCargo">Vendedor(a)</h3>
-        <h4 class="funDeslig">Desligado</h4>
-      </ion-label>
-      <ion-item-divider>
-        <ion-note class="note" slot="end" mode="ios">2018-DESLIGADO</ion-note>
+        <ion-note class="note" slot="end" mode="ios">{{ funcionario.dtAdm }}-DESLIGADO</ion-note>
       </ion-item-divider>
     </ion-item>
   </ion-list>
