@@ -1,7 +1,7 @@
 import { funcionarios } from './../models/funcionarios.model';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient,  HttpHeaders } from '@angular/common/http';
+import { HttpClient,  HttpContext,  HttpHeaders } from '@angular/common/http';
 import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 
@@ -46,8 +46,33 @@ export class RhwebService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + EnviaToken
    });
-   var bodyCadastro = {NovoFuncionario};
-   console.log('chegou e veio como json: ', NovoFuncionario);
-    return this.http.post('https://rh-web-api.herokuapp.com/funcionario/novo', bodyCadastro, { headers: reqHeader })
+
+   const body = JSON.stringify(NovoFuncionario);
+   console.log('chegou e veio como json: ', body);
+    return this.http.post('https://rh-web-api.herokuapp.com/funcionario/novo', body, { headers: reqHeader })
   }
+
+   //Beneficios
+   public getBeneficios():Observable<any>{
+    var logToken = localStorage.getItem('acessToken')
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + logToken
+   });
+    return this.http.get('https://rh-web-api.herokuapp.com/beneficios/listar', { headers: reqHeader })
+  }
+
+   //Deleta Beneficios
+   public deleteBeneficios(id):Observable<any>{
+    var logToken = localStorage.getItem('acessToken')
+    var reqHeader = new HttpHeaders({ 
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + logToken
+   });
+
+   var beneficio = id;
+
+    return this.http.delete('https://rh-web-api.herokuapp.com/beneficio/' + id, { headers: reqHeader })
+  }
+
 }

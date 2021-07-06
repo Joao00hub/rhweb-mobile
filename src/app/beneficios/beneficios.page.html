@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar color="temaadm">
+    <ion-buttons slot="end">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <ion-title mode="ios">Benefícios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <input type="button" id="btnAddBeneficio" class="btn btn-primary btn-sm" value="Novo Benefício">
+
+  <ion-list>
+
+    <ion-grid  class="gridStyle my-2" *ngFor="let i of beneficios">
+      <ion-row>
+        <ion-col size="12">
+            <h3 class="funNome">{{ i.descricao}} - {{ i.tipo.descricao }}</h3>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="3">
+            <p id="teste"  class="benCodigo">Código: {{ i.id }}</p>
+        </ion-col>
+        <ion-col size="3">
+            <p class="funAtivo">{{ i.desconto }}</p>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon id="p{{ i.id }}" class="btn shadow mr-1" name="create-outline" color="temaadm" (click)="pegaIdEdita($event)"></ion-icon>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon class="btn shadow mr-1" name="add-circle-outline" color="secondary"></ion-icon>
+        </ion-col>
+        <ion-col size="2">
+          <ion-icon id="{{ i.id }}" class="btn shadow" name="trash-outline" color="danger" (click)="onClick($event)"></ion-icon>
+        </ion-col>
+      </ion-row>           
+    </ion-grid>
+
+  </ion-list>
+
+</ion-content>

@@ -58,7 +58,11 @@ const routes: Routes = [
   {
     path: 'funcionarios-desligados',
     loadChildren: () => import('./funcionarios-desligados/funcionarios-desligados.module').then( m => m.FuncionariosDesligadosPageModule)
+  },  {
+    path: 'beneficios',
+    loadChildren: () => import('./beneficios/beneficios.module').then( m => m.BeneficiosPageModule)
   },
+
 ];
 
 @NgModule({

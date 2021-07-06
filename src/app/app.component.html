@@ -1,7 +1,7 @@
 <ion-app>
   <ion-menu side="start" type="push" menuId="main-menu" content-id="main">
     <ion-header>
-      <ion-toolbar color="light">     
+      <ion-toolbar color="light">
         <ion-title color="temaadm">Menu</ion-title>
         <ion-buttons slot="end">
           <ion-button color="temaadm" (click)="fechaMenu()">
@@ -27,10 +27,16 @@
           <ion-label color="temaadm">Novo Cadastro</ion-label>
         </ion-item>
 
-      <ion-item routerLink="/home" (click)="goToHome()">
-        <ion-icon name="log-out" slot="start" color="temaadm"></ion-icon>
-        <ion-label color="temaadm">Encerrar</ion-label>
-      </ion-item>
+        <ion-item routerLink="/beneficios" (click)="fechaMenu()">
+          <ion-icon name="ticket" slot="start" color="temaadm"></ion-icon>
+          <ion-label color="temaadm">Benefícios</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/home" (click)="goToHome()">
+          <ion-icon name="log-out" slot="start" color="temaadm"></ion-icon>
+          <ion-label color="temaadm">Encerrar</ion-label>
+        </ion-item>
+
 
       </ion-list>
     </ion-content>

@@ -54,7 +54,7 @@ export class NovocadastroPage implements OnInit {
         ferias: (<HTMLInputElement>document.getElementById("funcDtFerias")).value,
         salario: (<HTMLInputElement>document.getElementById("funcSalario")).value,
         foto: (<HTMLInputElement>document.getElementById("upImage")).value,
-        isAdmin: false,
+        isAdmin: "false",
         situacaoId: 1
       };
     }
