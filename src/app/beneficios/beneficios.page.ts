@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RhwebService } from './../services/rhweb.service';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-beneficios',
@@ -8,7 +9,7 @@ import { RhwebService } from './../services/rhweb.service';
 })
 export class BeneficiosPage implements OnInit {
 
-  constructor(private funcionariosService: RhwebService) { 
+  constructor(private funcionariosService: RhwebService, private navCtrl: NavController) { 
     this.getter();
   }
 
@@ -55,6 +56,7 @@ export class BeneficiosPage implements OnInit {
     var idAttr = target.attributes.id;
     var value = idAttr.nodeValue;
     var final = value.replace("p","")
+    this.navCtrl.navigateForward('edita-beneficio');
     console.log(final);
   }
 }

@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'beneficios',
     loadChildren: () => import('./beneficios/beneficios.module').then( m => m.BeneficiosPageModule)
   },
+  {
+    path: 'edita-beneficio',
+    loadChildren: () => import('./edita-beneficio/edita-beneficio.module').then( m => m.EditaBeneficioPageModule)
+  },
 
 ];
 
